@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '0258968c-d0d3-4233-ae32-c2ef2502e3b3'
   imageRepository: 'postmanpat'
   containerRegistry: 'katinkontitregistry.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'katinkontitregistry17b6-auth'
 
