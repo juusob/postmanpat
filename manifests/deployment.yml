@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: postmanpat 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postmanpat
+  template:
+    metadata:
+      labels:
+        app: postmanpat 
+    spec:
+      containers:
+        - name: postmanpat 
+          image: katinkontitregistry.azurecr.io/postmanpat
+          ports:
+          - containerPort: 80
